@@ -10,7 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 700px;
-    background-image: linear-gradient(to right bottom, rgb(255, 158, 174), lightblue, rgb(230, 183, 183), yellow);
+    background-image: linear-gradient(to right bottom, rgb(255, 158, 174), lightblue, rgb(230, 183, 183), rgb(232, 232, 157));
     background-attachment: fixed;
     font-family: "Sofia", sans-serif;
     color: rgb(70, 15, 70); 
