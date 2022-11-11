@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Pacifico&family=Poppins:wght@500;600;700&display=swap');
+:root {
+    --white-shade: rgba(255, 255, 255, 0.25);
+    --white-shade1: rgba(255, 255, 255, .4);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 700px;
+    background-image: linear-gradient(to right bottom, rgb(255, 158, 174), lightblue, rgb(230, 183, 183), yellow);
+    background-attachment: fixed;
+    font-family: "Sofia", sans-serif;
+    color: rgb(70, 15, 70); 
+}
+
+.cont {
+    background-color: var(--white-shade);
+    padding: 45px 45px;
+    border: 1px solid var(--white-shade1);
+    border-radius: 15px;
+}
+
+.cont .head h1 {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 35px;
+}
+
+.cont .head h3 {
+    font-size: 15px;
+    padding-left: 120px;
+}
+
+
+.cont .inpval label{
+    font-size: 25px;
+}
+
+.cont .inpval input {
+    background: linear-gradient(to right bottom, rgb(199, 247, 199),rgb(193, 225, 236));
+    width: 200px;
+    margin: 10px;
+    padding: 10px 10px;
+    border: 1px solid black;
+    border-radius: 25px;
+    
+}
+
+.cont .inpval button {
+    background: linear-gradient(to right bottom, rgb(199, 247, 199),rgb(193, 225, 236));
+    place-items: center;
+    font-size: 10px;
+    height: 20px;
+     width: 20px;
+    border-radius: 30px; 
+}
+
+#final{
+    font-size: 25px;
+    text-decoration: solid;
+}
+
+
+@media (max-width: 500px) {
+    .cont {
+        padding: 30px 30px;
+    }
+}

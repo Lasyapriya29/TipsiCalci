@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+    <title>TipsiCalci</title>
+</head>
+
+<body>
+    <div class="cont">
+        <div class="head">
+            <h1 class="font-effect-shadow-multiple">Tipsi Calci</h1>
+            <h3 class="font-effect-shadow-multiple">-Tip Calculator</h3>
+        </div>
+        <div class="inpval">
+            <div class="na font-effect-shadow-multiple">$ Bill Amount</div>
+            <input onkeyup="billcalc()" type="text" id="billamount" placeholder="0.00">
+        </div>
+        <div class="inpval">
+            <div class="na font-effect-shadow-multiple">% Tip Percent</div>
+            <input onkeyup="billcalc()" type="text" id="tipamount" placeholder="5">
+        </div>
+        <div class="inpval">
+            <div class="people font-effect-shadow-multiple">No. of persons</div>
+            <button onclick="increase()" class="sym" value="+">+</button>
+            <span class="split" id="splitval">1</span>
+            <button onclick="decrease()" class="sym" value="-">-</button>
+        </div>
+        <div class="totalCont">
+            <div class="people font-effect-shadow-multiple">Total per person</div>
+            <div class="total" id="final">₹0.00</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
