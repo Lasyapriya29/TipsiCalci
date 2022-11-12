@@ -11,7 +11,17 @@ var rupee = new Intl.NumberFormat('en-IN', {
 
 function billcalc() {
     const bi = Number(b.value)
+    if(bi < 0)
+    {
+        alert("Enter a positive bill amount");
+        return
+    }
     const ti = Number(t.value)
+    if(ti < 0)
+    {
+        alert("Enter a positive tip percentage");
+        return
+    }
     const tp = ti / 100
     const ta = bi * tp
     const tot = (bi + ta) / pn
